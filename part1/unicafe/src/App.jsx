@@ -28,7 +28,7 @@ const Statistics = ({ good, bad, neutral }) => {
   );
 };
 
-const Unicafe = () => {
+const App = () => {
   const [good, setGood] = useState(0)
   const [neutral, setNeutral] = useState(0)
   const [bad, setBad] = useState(0)
@@ -42,9 +42,9 @@ const Unicafe = () => {
         <Button handleClick={() => setBad(bad + 1)} buttonName="bad" />
       </div>
       <h1>statistics</h1>
-      {good || bad || neutral ? <Statistics good={good} bad={bad} neutral={neutral} /> : "No feedback given"}
+      {good || bad || neutral ? <Statistics good={good} bad={bad} neutral={neutral} /> : <p>No feedback given</p>}
     </>
   )
 }
 
-export default Unicafe
+export default App

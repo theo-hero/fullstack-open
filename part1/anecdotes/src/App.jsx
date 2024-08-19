@@ -2,7 +2,7 @@
 
 import { useState } from "react"
 
-const Anecdotes = () => {
+const App = () => {
     const getRandom = (min, max) => Math.round(Math.random() * (max - min) + min);
     const changeArray = (array, index) => {
         const copy = [...array];
@@ -56,4 +56,4 @@ const Anecdotes = () => {
     )
 }
 
-export default Anecdotes;
+export default App;
